@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:showIn="@layout/activity_cart">
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:verticalSpacing="1dp"
+
+
+
+            android:horizontalSpacing="1dp"
+
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <RelativeLayout
+            android:id="@+id/cart1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <FrameLayout
+                android:id="@+id/item_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="20">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/cart"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/cartitemtext"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/round_text_cart_item"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark" />
+            </FrameLayout>
+
+            <TextView
+
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/checkout_envelop"
+                android:layout_toRightOf="@+id/item_counter"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/cardback"
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:id="@+id/checkout_envelop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/checkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/checkout_button"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="5dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/checkout"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp" />
+            </FrameLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+
+                android:orientation="vertical"
+                android:layout_alignParentTop="true">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textColor="@color/colorback"
+
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical"
+                android:background="@drawable/linierlyout"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutUser"
+                    app:hintTextAppearance="@style/HintText"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:passwordToggleEnabled="true"
+                    app:boxStrokeColor="@color/colorback"
+                    app:boxStrokeWidth="3dp"
+
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etUsername"
+                        android:hint="Carer Name"
+                        android:inputType="text"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutEmail"
+                    app:hintTextAppearance="@style/HintText"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:passwordToggleEnabled="true"
+                    app:boxStrokeColor="@color/colorback"
+                    app:boxStrokeWidth="3dp"
+
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etEmail"
+                        android:hint="Enter Carer Email Id"
+
+                        android:inputType="textEmailAddress"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutAddress"
+                    app:hintTextAppearance="@style/HintText"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="1000"
+                    app:passwordToggleEnabled="true"
+                    app:boxStrokeColor="@color/colorback"
+                    app:boxStrokeWidth="3dp"
+
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etaddress"
+                        android:hint="Opinion"
+                        android:inputType="textMultiLine"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <Button android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="22dp"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:fontFamily="monospace"
+                    android:background="@drawable/button"
+                    android:id="@+id/btnregister"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Client</string>
+
+    <string name="action_logout">Logout</string>
+    <string name="title_carer">Carer</string>
+    <string name="title_order">Plans</string>
+    <string name="title_feedback">Feedback</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_profile">profile</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="url">https://careprovider.000webhostapp.com/CarerSystem/CarerSystem/android/appapi.php?</string>
+    <string name="checkout">CheckOut</string>
+    <string name="title_activity_homecare">homecare</string>
+    <string name="title_activity_cart">cart</string>
+    <string name="title_activity_Purchase">Purchase</string>
+    <string name="title_activity_ConfirmationActivity">ConfirmationActivity</string>
+    <string name="title_logout">Logout</string>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmationActivity"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/linier"
+        android:layout_marginBottom="15dp">
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="9">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Amount : "
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="monospace"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/paymentAmount"
+                    android:layout_width="200dp"
+
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="monospace"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Status : "
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="monospace"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/paymentStatus"
+                    android:layout_width="200dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="monospace"
+                    android:textSize="20sp"
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Id : "
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="monospace"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/paymentId"
+
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="monospace"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

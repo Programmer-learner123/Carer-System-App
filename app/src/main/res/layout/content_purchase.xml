@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="@color/cardback">
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:layout_weight="6">
+
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/textItemName3"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="22dp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="22dp"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:visibility="visible"
+            android:id="@+id/ene"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="22dp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/email"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="22dp"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/vv"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cateogry"
+            android:textSize="22dp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/category"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cate"
+            android:textSize="22dp"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/ee"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:textSize="22dp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/services"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="22dp"
+            android:textColor="#000"
+            />
+    </LinearLayout> <LinearLayout
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/p"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="22dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/price"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="22dp"
+        android:textColor="#000"
+        />
+</LinearLayout>
+
+            <TextView
+                android:id="@+id/editTextItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/editTextAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        android:layout_weight="5">
+
+
+        <Button
+            android:id="@+id/buttonPay"
+            android:text="Pay Now"
+            android:background="@color/colorPrimary"
+            android:layout_width="350dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+
+            android:layout_gravity="bottom|center_horizontal"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+
+
+            />
+    </LinearLayout>
+</LinearLayout>

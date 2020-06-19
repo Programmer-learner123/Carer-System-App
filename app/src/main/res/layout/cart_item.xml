@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rlRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardback"
+
+
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:id="@+id/btn_remove_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="14dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/delete" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/Item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:background="@null"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:visibility="visible"
+                    >
+
+                    <ImageView
+                        android:id="@+id/btn_decrease_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="6dp"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/minus" />
+
+                    <ImageView
+                        android:id="@+id/btn_increase_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="6dp"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/plus" />
+
+                    <EditText
+                        android:id="@+id/qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/btn_increase_count"
+                        android:layout_toRightOf="@id/btn_decrease_count"
+                        android:background="@drawable/edit_text_count"
+                        android:editable="false"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
